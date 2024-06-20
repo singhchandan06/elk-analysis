@@ -36,12 +36,19 @@ done
 
 rm *.columns
 
-paste file-Zn1.dat file-Zn2.dat |awk '{print $1, $2+$5, $3+$6}'>Zn-pdos.dat
+paste -d " " file-Zn{1..2}.dat|awk '{print $1, $2+$5, $3+$6}'>Zn-pdos.dat
 
-paste file-V1.dat file-V2.dat  file-V3.dat file-V4.dat |awk '{print $1,($2+$5+$8+$11),($3+$6+$9+$12)}'>V-pdos.dat
+paste -d " " file-V{1..4}.dat|awk '{print $1, ($2+$5+$8+$11),($3+$6+$9+$12)}'>V-pdos.dat
 
-paste file-O1.dat file-O2.dat file-O3.dat file-O4.dat file-O5.dat file-O6.dat file-O7.dat file-O8.dat |awk '{print $1,($2+$5+$8+$11+$14+$17+$20+$23),($3+$6+$9+$12+$15+$18+$21+$24)}'>O-pdos.dat
+paste -d " " file-O{1..8}.dat|awk '{print $1, ($2+$5+$8+$11+$14+$17+$20+$23),($3+$6+$9+$12+$15+$18+$21+$24)}'>O-pdos.dat
 
+paste -d " " file-Zn{1..2}-d.dat|awk '{print $1, $2+$5, $3+$6}'>Zn-pdos-d.dat
+
+paste -d " " file-V{1..4}-d.dat|awk '{print $1, ($2+$5+$8+$11),($3+$6+$9+$12)}'>V-pdos-d.dat
+
+paste -d " " file-O{1..8}-p.dat|awk '{print $1, ($2+$5+$8+$11+$14+$17+$20+$23),($3+$6+$9+$12+$15+$18+$21+$24)}'>O-pdos-p.dat
+
+rm file-*
 
 gnuplot gnuplot-pdos.sh
 
