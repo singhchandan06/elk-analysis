@@ -1,32 +1,38 @@
 #!/bin/bash
-blocks2columns.py PDOS_S01_A0001.OUT
-paste PDOS_S01_A0001.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-Zn1.dat
-blocks2columns.py PDOS_S01_A0002.OUT
-paste PDOS_S01_A0002.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-Zn2.dat
-blocks2columns.py PDOS_S02_A0001.OUT
-paste PDOS_S02_A0001.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-V1.dat
-blocks2columns.py PDOS_S02_A0002.OUT
-paste PDOS_S02_A0002.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-V2.dat
-blocks2columns.py PDOS_S02_A0003.OUT
-paste PDOS_S02_A0003.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-V3.dat
-blocks2columns.py PDOS_S02_A0004.OUT
-paste PDOS_S02_A0004.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-V4.dat
-blocks2columns.py PDOS_S03_A0001.OUT
-paste PDOS_S03_A0001.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-O1.dat
-blocks2columns.py PDOS_S03_A0002.OUT
-paste PDOS_S03_A0002.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-O2.dat
-blocks2columns.py PDOS_S03_A0003.OUT
-paste PDOS_S03_A0003.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-O3.dat
-blocks2columns.py PDOS_S03_A0004.OUT
-paste PDOS_S03_A0004.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-O4.dat
-blocks2columns.py PDOS_S03_A0005.OUT
-paste PDOS_S03_A0005.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-O5.dat
-blocks2columns.py PDOS_S03_A0006.OUT
-paste PDOS_S03_A0006.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-O6.dat
-blocks2columns.py PDOS_S03_A0007.OUT
-paste PDOS_S03_A0007.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-O7.dat
-blocks2columns.py PDOS_S03_A0008.OUT
-paste PDOS_S03_A0008.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-O8.dat
+for i in {1..2}
+do
+ blocks2columns.py PDOS_S01_A000$i.OUT
+ paste PDOS_S01_A000$i.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-Zn$i.dat
+done
+
+for i in {1..4}
+do
+ blocks2columns.py PDOS_S02_A000$i.OUT
+ paste PDOS_S02_A000$i.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-V$i.dat
+done
+
+for i in {1..8}
+do
+ blocks2columns.py PDOS_S03_A000$i.OUT
+ paste PDOS_S03_A000$i.OUT.columns |awk '{print $1, ($2+$3+$4+$5+$6+$7+$8+$9+$10+$11+$12+$13+$14+$15+$16+$17), ($18+$19+$20+$21+$22+$23+$24+$25+$26+$27+$28+$29+$30+$31+$32+$33)}'>file-O$i.dat
+done
+
+# orbitals contribution
+
+for i in {1..2}
+do
+ paste PDOS_S01_A000$i.OUT.columns |awk '{print $1, ($6+$7+$8+$9+$10), ($22+$23+$24+$25+$26)}'>file-Zn$i-d.dat
+done
+
+for i in {1..4}
+do
+ paste PDOS_S02_A000$i.OUT.columns |awk '{print $1, ($6+$7+$8+$9+$10), ($22+$23+$24+$25+$26)}'>file-V$i-d.dat
+done
+
+for i in {1..8}
+do
+ paste PDOS_S03_A000$i.OUT.columns |awk '{print $1, ($3+$4+$5), ($19+$20+$21)}'>file-O$i-p.dat
+done
 
 rm *.columns
 
